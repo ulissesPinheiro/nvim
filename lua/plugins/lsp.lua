@@ -281,28 +281,6 @@ return {
 					"-analyzers",
 					unpack(analyzer_jars),
 				},
-				settings = {
-					sonarlint = {
-						connectedMode = {
-							connections = {
-								sonarcloud = {
-									serverUrl = "https://sonarcloud.io",
-									token = "9c7ecc2e88f81a2a617b85b6e9fb5098fd267f13",
-									organizationKey = "f4g-sistemas-e-solucoes",
-								},
-							},
-							project = {
-								connectionId = "sonarcloud",
-								projectKey = vim.fn.system(
-									"grep 'sonar.projectKey' sonar-project.properties 2>/dev/null | cut -d'=' -f2 | tr -d '\n'"
-								) or "",
-							},
-						},
-						trace = {
-							server = "verbose",
-						},
-					},
-				},
 			},
 			filetypes = {
 				"python",

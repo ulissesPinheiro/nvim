@@ -32,8 +32,8 @@ require("lazy").setup({
 	require("plugins.copilotchat"),
 	require("plugins.conform"),
 	require("plugins.diffview"),
-	-- require("plugins.latex"),
+	require("plugins.latex"),
 	-- require("plugins.codecompanion"),
 	-- require("plugins.dbee"),
 })
-vim.cmd.colorscheme("darkblue")
+vim.cmd.colorscheme("sant_jorge_dark")

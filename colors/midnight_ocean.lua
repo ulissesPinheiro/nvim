@@ -1,0 +1,20 @@
+local colors = {
+	bg = "#23283b", -- fundo menos escuro (antes: #0a0e1a)
+	fg = "#c8d3f5",
+	black = "#2d3250", -- cinza escuro suave (antes: #0a0e1a)
+	red = "#ff757f",
+	green = "#c3e88d",
+	yellow = "#ffc777",
+	blue = "#82aaff",
+	magenta = "#c099ff",
+	cyan = "#86e1fc",
+	white = "#c8d3f5",
+	bright_black = "#444b6a",
+	bright_red = "#ff98a4",
+	bright_green = "#ddffa7",
+	bright_yellow = "#ffe5b5",
+	bright_blue = "#b4f9f8",
+	bright_magenta = "#fca7ea",
+	bright_cyan = "#b4f9f8",
+	bright_white = "#f2f2f2",
+}

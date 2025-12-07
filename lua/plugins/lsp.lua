@@ -1,6 +1,7 @@
 return {
 	-- Main LSP Configuration
 	"neovim/nvim-lspconfig",
+	"mfussenegger/nvim-jdtls",
 	dependencies = {
 		-- Automatically install LSPs and related tools to stdpath for Neovim
 		-- Mason must be loaded before its dependents so we need to set it up here.
@@ -15,6 +16,7 @@ return {
 		-- Allows extra capabilities provided by nvim-cmp
 		"hrsh7th/cmp-nvim-lsp",
 		"alnav3/sonarlint.nvim",
+		"neovim/nvim-lspconfig",
 	},
 	config = function()
 		-- 9c7ecc2e88f81a2a617b85b6e9fb5098fd267f13 nevim_token
@@ -305,5 +307,4 @@ return {
 			},
 		})
 	end,
-	{ "mfussenegger/nvim-jdtls", dependencies = { "neovim/nvim-lspconfig" } },
 }

@@ -6,7 +6,7 @@ local config = {
 
 	settings = {
 		java = {
- 		}
+		}
 	},
 
 

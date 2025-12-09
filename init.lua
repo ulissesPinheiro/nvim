@@ -25,7 +25,7 @@ require("lazy").setup({
 	require("plugins.indent-blankline"),
 	require("plugins.dadbod"),
 	require("plugins.typescripttoos"),
-	require("plugins.mfussenegger"),
+	-- require("plugins.mfussenegger"),
 	require("plugins.copilot"),
 	require("plugins.lazygit"),
 	-- require("plugins.avante"),

@@ -46,8 +46,8 @@ return {
         -- Configure and enable jdtls
         vim.lsp.config('jdtls', {
             capabilities = capabilities,
-            cmd = {"/home/ulisses/Workspace/jdt-server/bin/jdtls"},
-            root_dir = vim.fs.root(0, {'gradlew', '.git', 'mvnw'}),
+            cmd = { "jdtls" },
+            root_dir = vim.fs.root(0, { 'gradlew', '.git', 'mvnw' }),
             settings = {
                 java = {
                 }

@@ -13,6 +13,7 @@ return { -- Highlight, edit, and navigate code
 			"sql",
 			"lua",
 			"luadoc",
+			"yaml",
 			"markdown",
 			"markdown_inline",
 			"query",

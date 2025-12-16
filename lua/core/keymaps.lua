@@ -134,7 +134,7 @@ vim.keymap.set("n", "<leader>p", function()
 end, { desc = "Format code [P]rettier" })
 
 -- Telescope
-vim.keymap.set("n", "<leader>su", ":Telescope git_status<CR>", { desc = "Git Stat[U]s" })
+vim.keymap.set("n", "<leader>su", ":Telescope git_status<CR>", { desc = "Git Stat[u]s" })
 vim.keymap.set("n", "<leader>sh", ":Telescope help_tags<CR>", { desc = "[S]earch [H]elp" })
 vim.keymap.set("n", "<leader>sk", ":Telescope keymaps<CR>", { desc = "[S]earch [K]eymaps" })
 vim.keymap.set("n", "<leader>sf", ":Telescope find_files<CR>", { desc = "[S]earch [F]iles" })

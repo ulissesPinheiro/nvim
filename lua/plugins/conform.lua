@@ -10,12 +10,19 @@ return {
 				typescript = { "prettier" },
 				html = { "prettier" },
 				css = { "prettier" },
-				java = { "google-java-format" },
+				-- java = { "google-java-format" },
 			},
-			format_on_save = {
-				timeout_ms = 1000,
-				lsp_fallback = true,
-			},
+			format_on_save = function(bufnr)
+				local ft = vim.bo[bufnr].filetype
+				if ft == "java" then
+					return
+				end
+
+				return {
+					timeout_ms = 1000,
+					lsp_fallback = true,
+				}
+			end,
 		})
 	end,
 }

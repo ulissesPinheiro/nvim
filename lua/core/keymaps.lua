@@ -96,7 +96,6 @@ vim.keymap.set("n", "<leader>j", "*``cgn", opts)
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
-
 -- Symbols dinâmicos (busca conforme digita)
 -- LSD
 vim.keymap.set("n", "gl", vim.diagnostic.open_float, { desc = "F[l]oat [D]iagnostic" })
@@ -144,10 +143,14 @@ vim.keymap.set("n", "<leader>sg", ":Telescope live_grep<CR>", { desc = "[S]earch
 vim.keymap.set("n", "<leader>sd", ":Telescope diagnostics<CR>", { desc = "[S]earch [D]iagnostics" })
 vim.keymap.set("n", "<leader>sr", ":Telescope resume<CR>", { desc = "[S]earch [R]esume" })
 vim.keymap.set("n", "<leader>s.", ":Telescope oldfiles<CR>", { desc = '[S]earch Recent Files ("." for repeat)' })
-vim.keymap.set("n", "<leader>sm", ":Telescope lsp_document_symbols<CR>", { desc = "[S]earch [M]embers/Symbols in document" })
+vim.keymap.set(
+	"n",
+	"<leader>sm",
+	":Telescope lsp_document_symbols<CR>",
+	{ desc = "[S]earch [M]embers/Symbols in document" }
+)
 vim.keymap.set("n", "<leader>sS", ":Telescope lsp_workspace_symbols<CR>", { desc = "[S]earch [S]ymbols in workspace" })
 vim.keymap.set("n", "<leader><leader>", ":Telescope buffers<CR>", { desc = "[ ] Find existing buffers" })
-
 
 -- Keymaps para Diffview usando <leader>l como prefixo
 vim.keymap.set("n", "<leader>lo", ":DiffviewOpen<CR>", { desc = "[O]pen Diffview" })

@@ -44,7 +44,7 @@ return {
 		-- Configure and enable jdtls
 		vim.lsp.config("jdtls", {
 			capabilities = capabilities,
-			cmd = { "jdtls" },
+			cmd = { "jdtls", "-data", vim.fn.stdpath("data") .. "/jdtls-workspace" },
 			root_dir = vim.fs.root(0, { "gradlew", ".git", "mvnw" }),
 			settings = {
 				java = {},

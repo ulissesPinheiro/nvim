@@ -24,16 +24,14 @@ require("lazy").setup({
 	require("plugins.alpha"),
 	require("plugins.indent-blankline"),
 	require("plugins.dadbod"),
-	require("plugins.typescripttoos"),
+	require("plugins.typescripttools"),
 	-- require("plugins.mfussenegger"),
 	require("plugins.copilot"),
 	require("plugins.lazygit"),
-	-- require("plugins.avante"),
 	require("plugins.copilotchat"),
 	require("plugins.conform"),
 	require("plugins.diffview"),
+	require("plugins.sonarlint"),
 	require("plugins.latex"),
-	-- require("plugins.codecompanion"),
-	-- require("plugins.dbee"),
 })
 vim.cmd.colorscheme("sant_jorge_dark")

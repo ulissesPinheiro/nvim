@@ -126,6 +126,12 @@ vim.keymap.set("v", "<leader>zt", ":CopilotChatTests<CR>", { desc = "Generate Un
 vim.keymap.set("n", "<leader>zm", ":CopilotChatCommit<CR>", { desc = "Generate Commit [M]essage" })
 vim.keymap.set("v", "<leader>zs", ":CopilotChatCommit<CR>", { desc = "Generate Commit for [S]election" })
 vim.keymap.set("v", "<leader>zw", ":CopilotChatOpen<CR>", { desc = "Open Chat [W]indow" })
+vim.keymap.set(
+	"n",
+	"<leader>zP",
+	":CopilotChatGitCommitPtBr<CR>",
+	{ desc = "Generate Commit Message  [P]ortuguês-BR" }
+)
 
 -- conform prettier
 vim.keymap.set("n", "<leader>p", function()

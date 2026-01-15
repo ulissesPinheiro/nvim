@@ -136,24 +136,25 @@ vim.keymap.set(
 -- conform prettier
 vim.keymap.set("n", "<leader>p", function()
 	require("conform").format({ formatters = { "prettier" } })
-end, { desc = "Format code [P]rettier" })
+end, { desc = "Format code [p]rettier" })
 
 -- Telescope
-vim.keymap.set("n", "<leader>su", ":Telescope git_status<CR>", { desc = "Git Stat[u]s" })
-vim.keymap.set("n", "<leader>sh", ":Telescope help_tags<CR>", { desc = "[S]earch [H]elp" })
-vim.keymap.set("n", "<leader>sk", ":Telescope keymaps<CR>", { desc = "[S]earch [K]eymaps" })
-vim.keymap.set("n", "<leader>sf", ":Telescope find_files<CR>", { desc = "[S]earch [F]iles" })
-vim.keymap.set("n", "<leader>st", ":Telescope<CR>", { desc = "[S]earch [T]elescope Pickers" })
-vim.keymap.set("n", "<leader>sw", ":Telescope grep_string<CR>", { desc = "[S]earch current [W]ord" })
-vim.keymap.set("n", "<leader>sg", ":Telescope live_grep<CR>", { desc = "[S]earch by [G]rep" })
-vim.keymap.set("n", "<leader>sd", ":Telescope diagnostics<CR>", { desc = "[S]earch [D]iagnostics" })
-vim.keymap.set("n", "<leader>sr", ":Telescope resume<CR>", { desc = "[S]earch [R]esume" })
+vim.keymap.set("n", "<leader>su", ":Telescope git_status<CR>", { desc = "[S]earch Git Stat[u]s" })
+vim.keymap.set("n", "<leader>sh", ":Telescope help_tags<CR>", { desc = "[S]earch [h]elp" })
+vim.keymap.set("n", "<leader>sk", ":Telescope keymaps<CR>", { desc = "[S]earch [k]eymaps" })
+vim.keymap.set("n", "<leader>sf", ":Telescope find_files<CR>", { desc = "[S]earch [f]iles" })
+vim.keymap.set("n", "<leader>st", ":Telescope<CR>", { desc = "[S]earch [t]elescope Pickers" })
+vim.keymap.set("n", "<leader>sw", ":Telescope grep_string<CR>", { desc = "[S]earch current [w]ord" })
+vim.keymap.set("n", "<leader>sg", ":Telescope live_grep<CR>", { desc = "[S]earch by [g]rep" })
+vim.keymap.set("n", "<leader>sd", ":Telescope diagnostics<CR>", { desc = "[S]earch [d]iagnostics" })
+vim.keymap.set("n", "<leader>sr", ":Telescope resume<CR>", { desc = "[S]earch [r]esume" })
 vim.keymap.set("n", "<leader>s.", ":Telescope oldfiles<CR>", { desc = '[S]earch Recent Files ("." for repeat)' })
+vim.keymap.set("n", "<leader>sm", ":Telescope marks<CR>", { desc = "[S]earch [m]arks buffers" })
 vim.keymap.set(
 	"n",
-	"<leader>sm",
+	"<leader>ss",
 	":Telescope lsp_document_symbols<CR>",
-	{ desc = "[S]earch [M]embers/Symbols in document" }
+	{ desc = "[S]earch Members/[s]ymbols in document" }
 )
 vim.keymap.set("n", "<leader>sS", ":Telescope lsp_workspace_symbols<CR>", { desc = "[S]earch [S]ymbols in workspace" })
 vim.keymap.set("n", "<leader><leader>", ":Telescope buffers<CR>", { desc = "[ ] Find existing buffers" })

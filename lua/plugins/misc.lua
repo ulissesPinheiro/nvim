@@ -32,6 +32,10 @@ return {
 			--     { '│', 'FloatBorder' },
 			--   },
 			-- },
+			plugins = {
+				marks = false,
+				registers = false,
+			},
 		},
 	},
 	{

@@ -7,9 +7,13 @@ return {
 	build = "make tiktoken", -- Only on MacOS or Linux
 	lazy = false,
 	opts = {
+		model = "claude-sonnet-4.5",
 		prompts = {
 			GitCommitPtBr = {
-				prompt = "Write a commit message for the staged changes using the commitizen convention. The title should be at most 50 characters, and the body should be wrapped at 72 characters. Wrap the whole message in a code block with language gitcommit in Portugues-BR.",
+				prompt = "Get the staged changes and write a commit message for them using the commitizen convention. The title should be at most 50 characters, and the body should be wrapped at 72 characters. Wrap the whole message in a code block with language gitcommit in Portuguese (pt-BR).",
+				resources = {
+			     'gitdiff:staged',
+				},
 			},
 		},
 	},

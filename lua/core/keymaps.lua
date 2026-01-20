@@ -93,8 +93,9 @@ vim.keymap.set("v", "p", '"_dP', opts)
 vim.keymap.set("n", "<leader>j", "*``cgn", opts)
 
 -- Explicitly yank to system clipboard (highlighted and entire row)
-vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Yank to system clipboard" })
 vim.keymap.set("n", "<leader>Y", [["+Y]])
+vim.keymap.set("n", "<leader>p", [["+p]], { desc = "Paste from system clipboard" })
 
 -- Symbols dinâmicos (busca conforme digita)
 -- LSD
@@ -134,9 +135,9 @@ vim.keymap.set(
 )
 
 -- conform prettier
-vim.keymap.set("n", "<leader>p", function()
+vim.keymap.set("n", "<leader>e", function()
 	require("conform").format({ formatters = { "prettier" } })
-end, { desc = "Format code [p]rettier" })
+end, { desc = "Format code pr[e]ttier" })
 
 -- Telescope
 vim.keymap.set("n", "<leader>su", ":Telescope git_status<CR>", { desc = "[S]earch Git Stat[u]s" })

@@ -33,5 +33,6 @@ require("lazy").setup({
 	require("plugins.diffview"),
 	require("plugins.sonarlint"),
 	require("plugins.latex"),
+	require("plugins.blame"),
 })
-vim.cmd.colorscheme("sant_jorge_dark")
+vim.cmd.colorscheme("koehler")

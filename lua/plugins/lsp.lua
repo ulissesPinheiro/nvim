@@ -41,6 +41,12 @@ return {
 		})
 		vim.lsp.enable("html")
 
+		-- Configure and enable cssls
+		vim.lsp.config("cssls", {
+			capabilities = capabilities,
+		})
+		vim.lsp.enable("cssls")
+
 		-- Configure and enable jdtls
 		vim.lsp.config("jdtls", {
 			capabilities = capabilities,

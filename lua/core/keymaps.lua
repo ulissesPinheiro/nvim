@@ -14,19 +14,19 @@ vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
--- clear highlights
+-- Clear highlights
 vim.keymap.set("n", "<Esc>", ":noh<CR>", opts)
 
--- save file
+-- Save file
 vim.keymap.set("n", "<C-s>", "<cmd> w <CR>", opts)
 
--- save file without auto-formatting
+-- Save file without auto-formatting
 vim.keymap.set("n", "<leader>sn", "<cmd>noautocmd w <CR>", opts)
 
--- quit file
+-- Quit file
 vim.keymap.set("n", "<C-q>", "<cmd> q <CR>", opts)
 
--- delete single character without copying into register
+-- Delete single character without copying into register
 vim.keymap.set("n", "x", '"_x', opts)
 
 -- Vertical scroll and center
@@ -116,7 +116,7 @@ vim.keymap.set("n", "<leader>f", function()
 	vim.lsp.buf.format({ async = true })
 end, { desc = "[F]ormat code" })
 
--- copilot
+-- Copilot
 vim.keymap.set("n", "<leader>zc", ":CopilotChat<CR>", { desc = "Chat with [C]opilot" })
 vim.keymap.set("v", "<leader>ze", ":CopilotChatExplain<CR>", { desc = "[E]xplain Code" })
 vim.keymap.set("v", "<leader>zr", ":CopilotChatReview<CR>", { desc = "[R]eview Code" })
@@ -134,7 +134,7 @@ vim.keymap.set(
 	{ desc = "Generate Commit Message  [P]ortuguês-BR" }
 )
 
--- conform prettier
+-- Conform prettier
 vim.keymap.set("n", "<leader>e", function()
 	require("conform").format({ formatters = { "prettier" } })
 end, { desc = "Format code pr[e]ttier" })
@@ -168,7 +168,12 @@ vim.keymap.set("n", "<leader>lr", ":DiffviewRefresh<CR>", { desc = "[R]efresh Di
 -- Diffview file history for current file
 vim.keymap.set("n", "<leader>lf", ":DiffviewFileHistory %<CR>", { desc = "Histórico do arquivo atual (Dif[f]view)" })
 
+-- Blame
+vim.keymap.set("n", "<leader>lb", ":BlameToggle", { desc = "Git [B]lame" })
+
+-- LazyGit
 vim.keymap.set("n", "<leader>lg", "<cmd>LazyGit<cr>", { desc = "Lazy[G]it" })
+
 -- DAP (Debug Adapter Protocol)
 vim.keymap.set("n", "<space>b", function()
 	require("dap").toggle_breakpoint()

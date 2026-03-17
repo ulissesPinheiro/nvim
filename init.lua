@@ -25,14 +25,13 @@ require("lazy").setup({
 	require("plugins.indent-blankline"),
 	require("plugins.dadbod"),
 	require("plugins.typescripttools"),
-	-- require("plugins.mfussenegger"),
 	require("plugins.copilot"),
 	require("plugins.lazygit"),
 	require("plugins.copilotchat"),
 	require("plugins.conform"),
 	require("plugins.diffview"),
-	require("plugins.sonarlint"),
+	-- require("plugins.sonarlint"),
 	require("plugins.latex"),
 	require("plugins.blame"),
 })
-vim.cmd.colorscheme("koehler")
+vim.cmd.colorscheme("carbonfox")

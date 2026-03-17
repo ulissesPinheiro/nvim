@@ -1,4 +1,4 @@
 return {
 
-	{ "Mofiqul/dracula.nvim" },
+	{ "EdenEast/nightfox.nvim" },
 }

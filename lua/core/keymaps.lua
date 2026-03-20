@@ -116,6 +116,17 @@ vim.keymap.set("n", "<leader>f", function()
 	vim.lsp.buf.format({ async = true })
 end, { desc = "[F]ormat code" })
 
+-- Claude
+vim.keymap.set("v", "<leader>zD", "<cmd>ClaudeCode<cr>", { desc = "Toggle Clau[D]e" })
+vim.keymap.set("n", "<leader>zF", "<cmd>ClaudeCodeFocus<cr>", { desc = "[F]ocus Claude" })
+vim.keymap.set("n", "<leader>zR", "<cmd>ClaudeCode --resume<cr>", { desc = "[R]esume Claude" })
+vim.keymap.set("n", "<leader>zC", "<cmd>ClaudeCode --continue<cr>", { desc = "[C]ontinue Claude" })
+vim.keymap.set("n", "<leader>zM", "<cmd>ClaudeCodeSelectModel<cr>", { desc = "Select Claude [M]odel" })
+vim.keymap.set("n", "<leader>zB", "<cmd>ClaudeCodeAdd %<cr>", { desc = "Add current [B]uffer" })
+vim.keymap.set("v", "<leader>zS", "<cmd>ClaudeCodeSend<cr>", { desc = "[S]end to Claude" })
+vim.keymap.set("n", "<leader>zA", "<cmd>ClaudeCodeDiffAccept<cr>", { desc = "[A]ccept diff" })
+vim.keymap.set("n", "<leader>zD", "<cmd>ClaudeCodeDiffDeny<cr>", { desc = "[D]eny diff" })
+
 -- Copilot
 vim.keymap.set("n", "<leader>zc", ":CopilotChat<CR>", { desc = "Chat with [C]opilot" })
 vim.keymap.set("v", "<leader>ze", ":CopilotChatExplain<CR>", { desc = "[E]xplain Code" })

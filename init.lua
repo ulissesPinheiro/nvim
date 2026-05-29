@@ -34,4 +34,4 @@ require("lazy").setup({
 	require("plugins.latex"),
 	require("plugins.blame"),
 })
-vim.cmd.colorscheme("carbonfox")
+vim.cmd.colorscheme("kanagawa")

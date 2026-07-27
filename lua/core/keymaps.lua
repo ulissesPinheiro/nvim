@@ -127,24 +127,24 @@ vim.keymap.set("v", "<leader>zS", "<cmd>ClaudeCodeSend<cr>", { desc = "[S]end to
 vim.keymap.set("n", "<leader>zA", "<cmd>ClaudeCodeDiffAccept<cr>", { desc = "[A]ccept diff" })
 vim.keymap.set("n", "<leader>zD", "<cmd>ClaudeCodeDiffDeny<cr>", { desc = "[D]eny diff" })
 
--- Copilot
-vim.keymap.set("n", "<leader>zc", ":CopilotChat<CR>", { desc = "Chat with [C]opilot" })
-vim.keymap.set("v", "<leader>ze", ":CopilotChatExplain<CR>", { desc = "[E]xplain Code" })
-vim.keymap.set("v", "<leader>zr", ":CopilotChatReview<CR>", { desc = "[R]eview Code" })
-vim.keymap.set("v", "<leader>zf", ":CopilotChatFix<CR>", { desc = "[F]ix Code Issues" })
-vim.keymap.set("v", "<leader>zo", ":CopilotChatOptimize<CR>", { desc = "[O]ptimize Code" })
-vim.keymap.set("v", "<leader>zd", ":CopilotChatDocs<CR>", { desc = "Generate [D]ocs" })
-vim.keymap.set("v", "<leader>zt", ":CopilotChatTests<CR>", { desc = "Generate Unit [T]ests" })
-vim.keymap.set("n", "<leader>zm", ":CopilotChatCommit<CR>", { desc = "Generate Commit [M]essage" })
-vim.keymap.set("v", "<leader>zs", ":CopilotChatCommit<CR>", { desc = "Generate Commit for [S]election" })
-vim.keymap.set("v", "<leader>zw", ":CopilotChatOpen<CR>", { desc = "Open Chat [W]indow" })
-vim.keymap.set(
-	"n",
-	"<leader>zP",
-	":CopilotChatGitCommitPtBr<CR>",
-	{ desc = "Generate Commit Message  [P]ortuguês-BR" }
-)
-
+-- -- Copilot
+-- vim.keymap.set("n", "<leader>zc", ":CopilotChat<CR>", { desc = "Chat with [C]opilot" })
+-- vim.keymap.set("v", "<leader>ze", ":CopilotChatExplain<CR>", { desc = "[E]xplain Code" })
+-- vim.keymap.set("v", "<leader>zr", ":CopilotChatReview<CR>", { desc = "[R]eview Code" })
+-- vim.keymap.set("v", "<leader>zf", ":CopilotChatFix<CR>", { desc = "[F]ix Code Issues" })
+-- vim.keymap.set("v", "<leader>zo", ":CopilotChatOptimize<CR>", { desc = "[O]ptimize Code" })
+-- vim.keymap.set("v", "<leader>zd", ":CopilotChatDocs<CR>", { desc = "Generate [D]ocs" })
+-- vim.keymap.set("v", "<leader>zt", ":CopilotChatTests<CR>", { desc = "Generate Unit [T]ests" })
+-- vim.keymap.set("n", "<leader>zm", ":CopilotChatCommit<CR>", { desc = "Generate Commit [M]essage" })
+-- vim.keymap.set("v", "<leader>zs", ":CopilotChatCommit<CR>", { desc = "Generate Commit for [S]election" })
+-- vim.keymap.set("v", "<leader>zw", ":CopilotChatOpen<CR>", { desc = "Open Chat [W]indow" })
+-- vim.keymap.set(
+-- 	"n",
+-- 	"<leader>zP",
+-- 	":CopilotChatGitCommitPtBr<CR>",
+-- 	{ desc = "Generate Commit Message  [P]ortuguês-BR" }
+-- )
+--
 -- Conform prettier
 vim.keymap.set("n", "<leader>e", function()
 	require("conform").format({ formatters = { "prettier" } })

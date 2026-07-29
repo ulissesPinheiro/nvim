@@ -116,6 +116,9 @@ vim.keymap.set("n", "<leader>f", function()
 	vim.lsp.buf.format({ async = true })
 end, { desc = "[F]ormat code" })
 
+-- Gemini
+vim.keymap.set("n", "<leader>zG", "<cmd>GeminiGenerateCommitMessage<cr>", { desc = "Generate Commit Message [G]emini"})
+
 -- Claude
 vim.keymap.set("v", "<leader>zD", "<cmd>ClaudeCode<cr>", { desc = "Toggle Clau[D]e" })
 vim.keymap.set("n", "<leader>zF", "<cmd>ClaudeCodeFocus<cr>", { desc = "[F]ocus Claude" })

@@ -33,6 +33,7 @@ require("lazy").setup({
 	-- require("plugins.sonarlint"),
 	require("plugins.latex"),
 	require("plugins.blame"),
+	require("plugins.kiddos"),
 	require("plugins.claudecode"),
 })
 vim.cmd.colorscheme("duskfox")

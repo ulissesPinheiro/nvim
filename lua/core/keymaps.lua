@@ -117,9 +117,9 @@ vim.keymap.set("n", "<leader>f", function()
 end, { desc = "[F]ormat code" })
 
 -- Gemini
-vim.keymap.set("n", "<leader>zG", "<cmd>GeminiGenerateCommitMessagePtBR<cr>", { desc = "Generate Commit Message pt-Br [G]emini"})
-
-vim.keymap.set("n", "<leader>zg", "<cmd>GeminiGenerateCommitMessage<cr>", { desc = "Generate Commit Message [G]emini"})
+vim.keymap.set("n", "<leader>zG", "<cmd>GeminiGenerateCommitMessagePtBR<cr>", { desc = "Generate Commit Message pt-Br [G]emini" })
+vim.keymap.set("n", "<leader>zg", "<cmd>GeminiGenerateCommitMessage<cr>", { desc = "Generate Commit Message [G]emini" })
+vim.keymap.set("n", "<leader>zga", "<cmd>GeminiApply<cr>", { desc = "[A]pply change [G]emini" })
 
 
 -- Claude

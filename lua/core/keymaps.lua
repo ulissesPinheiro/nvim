@@ -133,6 +133,9 @@ vim.keymap.set("v", "<leader>zS", "<cmd>ClaudeCodeSend<cr>", { desc = "[S]end to
 vim.keymap.set("n", "<leader>zA", "<cmd>ClaudeCodeDiffAccept<cr>", { desc = "[A]ccept diff" })
 vim.keymap.set("n", "<leader>zD", "<cmd>ClaudeCodeDiffDeny<cr>", { desc = "[D]eny diff" })
 
+-- DBUI
+vim.keymap.set("n", "<leader>zD", "<cmd>DBUI<cr>", { desc = "Open [D]BUI"})
+
 -- -- Copilot
 -- vim.keymap.set("n", "<leader>zc", ":CopilotChat<CR>", { desc = "Chat with [C]opilot" })
 -- vim.keymap.set("v", "<leader>ze", ":CopilotChatExplain<CR>", { desc = "[E]xplain Code" })

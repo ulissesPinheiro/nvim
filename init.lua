@@ -36,4 +36,4 @@ require("lazy").setup({
 	require("plugins.kiddos"),
 	require("plugins.claudecode"),
 })
-vim.cmd.colorscheme("duskfox")
+vim.cmd.colorscheme("neon_violet")
